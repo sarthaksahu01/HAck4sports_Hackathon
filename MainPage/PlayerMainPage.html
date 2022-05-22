@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <header>
+      <link rel="stylesheet" href="PlayerMainPage.css" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+        crossorigin="anonymous"
+      />
+      <title>Player -Team Key</title>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./RegisterPage.html">Play India</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./RegisterPage.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href=""
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topics
+                </a>
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Technology</a></li>
+                        <li><a class="dropdown-item" href="#">Web development</a></li>
+                        <li><a class="dropdown-item" href="#">Support</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Write for us</a></li>
+                    </ul> 
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-primary" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          <!-- <div class="mx-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Sign up
+            </button>
+          </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- kuber -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Player Registration Form
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="page">
+              <h2 class="h1heading"><u>Josh Badminton Trophy</u></h2>
+              <h5>
+                <b>Oragnised By : </b
+                ><span><u>Dayanand Sagar Club</u> (Bengaluru)</span>
+              </h5>
+              <h5><b>Details :</b></h5>
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>24/06/2022 - 28/06/2022</th>
+                </tr>
+                <tr>
+                  <th>Place</th>
+                  <th>Dayananda Sagar Ground (Bengaluru)</th>
+                </tr>
+                <tr>
+                  <th>Type</th>
+                  <th>Knockout</th>
+                </tr>
+                <tr>
+                  <th>Prize Pool</th>
+                  <th>10 Lakhs</th>
+                </tr>
+              </table>
+              <h5>
+                <b><u>Sponsers :</u></b>
+              </h5>
+              <img
+                class="logo"
+                src="https://media.istockphoto.com/photos/fire-fighter-badge-picture-id1136015398?b=1&k=20&m=1136015398&s=170667a&w=0&h=OdQ94IJ854owdXPffTKsfzgTzuYe2tXMaz_fKytJlHA="
+                alt="logo_img"
+              />
+              <img
+                class="logo"
+                src="https://media.istockphoto.com/photos/3d-art-with-pink-female-warrior-silhouette-picture-id1354698302?b=1&k=20&m=1354698302&s=170667a&w=0&h=gCVyH45ZUu3nRuSbXfCja_D7_jkNzfY-kdILxQokMNE="
+                alt="logo_img"
+              />
+
+              <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h3><u>Register</u></h3>
+
+                  <label for="email"><b>Your Name</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Name"
+                    name="email"
+                    required
+                  />
+
+                  <label for="email"><b>Email</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
+                  />
+
+                  <label for="birthday"><b>Birthday:</b></label>
+                  <input type="date" id="birthday" name="birthday" required />
+
+                  <label for="myfile"><b>Your Certificate</b>(optional)</label>
+                  <input type="file" id="myfile" name="myfile" />
+
+                  <label for="myfile"><b>Aadhar Card No</b> </label>
+                  <input
+                    type="text"
+                    id="myfile"
+                    placeholder="Your Adhar Card No"
+                    name="myfile"
+                    required
+                  />
+
+                  <button
+                    type="submit"
+                    style="background-color: rgb(148, 161, 188)"
+                    class="btn"
+                  >
+                    <b>Register</b>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+      /* heading  */
+      .h1heading {
+        margin: 2em 0 0.5em 0;
+        color: #343434;
+        font-weight: normal;
+        font-family: "Ultra", sans-serif;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+        text-align-last: center;
+        text-shadow: 0 2px white, 0 3px #777;
+      }
+
+      .hero-image {
+        background-image: url("https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_960_720.jpg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .hero-image1 {
+        background-image: url("./images/PLayer\ Regsitration\ background.jpg");
+
+        height: 650px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .hero-text {
+        text-align: center;
+        /* background-color: rgb(0, 0, 0, 0.4); */
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        font-family: arial;
+      }
+      .main {
+        margin: 2%;
+      }
+
+      .card {
+        width: 20%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px;
+        margin: 2%;
+      }
+
+      .image img {
+        width: 100%;
+        height: 200px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+
+      .title {
+        text-align: center;
+        padding: 10px;
+      }
+
+      .new {
+        font-size: 20px;
+      }
+
+      .des {
+        padding: 3px;
+        text-align: center;
+
+        padding-top: 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .butt {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      button:hover {
+        background-color: black;
+        color: white;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <!-- CSS only -->
+
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">Welcome to Player portal</h1>
+        <h3>Khelega India tabhi toh bhadega India</h3>
+      </div>
+    </div>
+    <h1 class="h1heading">Upcoming Tournaments</h1>
+    <div class="main">
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/b1.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">Josh Badminton Trophy</h1>
+        </div>
+        <div class="des">
+          <p>A series of cardio exercise for the ...</p>
+          <button
+            class="butt"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+      <!--cards -->
+      <div class="card">
+        <div class="image">
+          <img src="./images/k1.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">All India Kabaddi Festival</h1>
+        </div>
+        <div class="des">
+          <p>A national-level kabaddi competition...</p>
+          <button class="butt">Read More</button>
+        </div>
+      </div>
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/h1.JPG" />
+        </div>
+        <div class="title">
+          <h1 class="new">Haryana Hockey Tournament</h1>
+        </div>
+        <div class="des">
+          <p>Organised by Haryana state govern.</p>
+          <button class="butt">Read More</button>
+        </div>
+      </div>
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/p1.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">Bengaluru Hockey Champion</h1>
+        </div>
+        <div class="des">
+          <p>This inter PU level...</p>
+          <button class="butt">Read More</button>
+        </div>
+      </div>
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/r1.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">National Athletics Champion</h1>
+        </div>
+        <div class="des">
+          <p>All India scope tournament...</p>
+          <p></p>
+          <p>
+            <button class="butt">Read More</button>
+          </p>
+        </div>
+      </div>
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/k2.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">Delhi Koho Tournament</h1>
+        </div>
+        <div class="des">
+          <p>Organised at the city-level...</p>
+          <button class="butt">Read More</button>
+        </div>
+      </div>
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/p4.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">Assam Football Champs</h1>
+        </div>
+        <div class="des">
+          <p>Every year organised sport events...</p>
+          <button class="butt">Read More</button>
+        </div>
+      </div>
+      <!--cards -->
+
+      <div class="card">
+        <div class="image">
+          <img src="./images/p2.jpg" />
+        </div>
+        <div class="title">
+          <h1 class="new">Khel Utsav 2022</h1>
+        </div>
+        <div class="des">
+          <p>Organised by the UP government...</p>
+          <button class="butt">Read More</button>
+        </div>
+      </div>
+      <!--cards -->
+      <h1 class="h1heading">Consultancy Services</h1>
+    </div>
+    <div class="hero-image1">
+      <div class="hero-text" id="Welcome">
+        <h1 style="font-size: 50px">Grow With Us</h1>
+        <h3>Where your Are and Where you want to be</h3>
+      </div>
+    </div>
+
+    <div class="ourPartner">
+      <h2>Our Partners :</h2>
+
+      <img
+        src="data:image/jpeg;base64,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"
+        alt=""
+      />
+      <h3>Sporjo</h3>
+      <p class="sporjop">
+        Affectionately called G Srini, he believes Sports is like oxygen, one
+        breathes oxygen that helps you live. A sports industry stalwart with 19+
+        years of experience, he was part of the team that launched the Indian
+        Super League and part of the leadership team at Reliance Sports. From
+        heading Marketing & Sponsorship Sales for the BCCI, IPL and formulating
+        the strategy for the IPL brand to Nike brand communications and multiple
+        marketing and business development roles within ESPN, he brings
+        unprecedented insight and understanding. He personally values nurturing
+        new off field talent to help the Indian Sports industry grow and build a
+        multi sport culture.....<span
+          ><a href="https://www.sporjo.com/">Read more</a></span
+        >
+      </p>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer class="bg-dark text-light py-3">
+    <a href="https://twitter.com/?logout=1652864631323">
+      <i class="footer-fav-icon">
+        <img
+          class="footer-fav-icon"
+          src="./images/Twitter-fav-icon-bg-dark.jpg"
+          alt="#"
+        />
+      </i>
+    </a>
+    <p class="text-center">copyright &copy; Team Key</p>
+  </footer>
+</html>

@@ -1,0 +1,63 @@
+.cardsForm {
+  display: flex;
+  margin: 119px;
+  margin-top: 20px;
+}
+
+.card {
+  margin: 70px;
+}
+
+.container {
+  background-color: white;
+  max-width: 100%;
+  margin: 0px;
+}
+
+.heading {
+  margin: 0px 89px;
+  padding: 90px 87px 57px;
+  font-size: 106px;
+  font-family: Anton, sans-serif;
+}
+
+.subheading {
+  margin-top: 23px;
+  padding: 85px 129px;
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  margin: 0px 46px;
+  padding-bottom: 207px;
+}
+
+.optionHeading {
+  margin-top: 23px;
+  padding: 0px 129px;
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  margin: 115px 64px 0px 395px;
+  padding-bottom: 0px;
+}
+
+.card-text {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.footer-fav-icon {
+  vertical-align: middle;
+  width: 24px;
+  justify-content: center;
+  /* margin-left: 354px; */
+  /* padding: 19px; */
+  margin: 26px 0px 29px 374px;
+}
+
+.bg-dark text-light py-3 {
+  position: "absolute";
+  width: 100%;
+  top: "4000px";
+}

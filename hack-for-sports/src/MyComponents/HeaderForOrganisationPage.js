@@ -1,0 +1,64 @@
+import React from "react";
+import PropTypes from "prop-types";
+import "./HeaderForOrganisationPage.css";
+
+export default function header(props) {
+  return (
+    <nav
+      className="navbar navbar-expand-lg navbar-light
+     bg-light"
+    >
+      <div className="container-fluid ">
+        <a className="navbar-brand" href="#">
+          {/* Organisation Page */}
+          {props.title}
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="#">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">
+                About Us
+              </a>
+            </li>
+          </ul>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn btn-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+// header.deafultprops ={
+//   title: "This is the default title" //If no title is passed anywhere then this is executed by default and this is an object
+//   if we have multiple parameters then use comma
+
+// }
+// header.propTypes ={
+//   title: PropTypes.string //this is helpful when debugging website and this is an object
+// }

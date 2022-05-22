@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="PlayerRegistration.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>Register Yourself</h1>
+      <h2>
+        Oragnised By : <span><u>Team Key</u> (Bengaluru)</span>
+      </h2>
+      <h3>Details :</h3>
+      <p>
+        In publishing and graphic design, Lorem ipsum is a placeholder text
+        commonly used to demonstrate the visual form of a document or a typeface
+        without relying on meaningful content. Lorem ipsum may be used as a
+        placeholder before final copy is available. It is also used to
+        temporarily replace text in a process called greeking, which allows
+        designers to consider the form of a webpage or publication, without the
+        meaning of the text influencing the design.
+      </p>
+      <h4>Sponsers :</h4>
+      <img
+        class="logo"
+        src="https://media.istockphoto.com/photos/fire-fighter-badge-picture-id1136015398?b=1&k=20&m=1136015398&s=170667a&w=0&h=OdQ94IJ854owdXPffTKsfzgTzuYe2tXMaz_fKytJlHA="
+        alt="logo_img"
+      />
+      <img
+        class="logo"
+        src="https://media.istockphoto.com/photos/3d-art-with-pink-female-warrior-silhouette-picture-id1354698302?b=1&k=20&m=1354698302&s=170667a&w=0&h=gCVyH45ZUu3nRuSbXfCja_D7_jkNzfY-kdILxQokMNE="
+        alt="logo_img"
+      />
+      <button class="open-button" onclick="openForm()">Register</button>
+      <button class="back-button" onclick="openForm()">Back</button>
+
+      <div class="form-popup" id="myForm">
+        <form action="./PlayerMainPage.html" class="form-container">
+          <h1>Register</h1>
+
+          <label for="email"><b>Your Name</b></label>
+          <input type="text" placeholder="Enter Name" name="email" required />
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="birthday"><b>Date of Birth</b></label>
+          <input type="date" id="birthday" name="birthday" required />
+
+          <label for="myfile"><b>Your Certificate</b> If any</label>
+          <input type="file" id="myfile" name="myfile" />
+
+          <label for="myfile"><b>Aadhar Card Number</b></label>
+          <input type="text" id="myfile" name="myfile" required />
+
+          <button class="btn" type="submit">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

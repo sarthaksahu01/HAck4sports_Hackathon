@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- image styling -->
+    <style type="text/css">
+      /* heading  */
+      .h1heading {
+        margin: 2em 0 0.5em 0;
+        color: #343434;
+        font-weight: normal;
+        font-family: "Ultra", sans-serif;
+        font-size: 34px;
+        line-height: 42px;
+        text-transform: uppercase;
+        text-align-last: center;
+        text-shadow: 0 2px white, 0 3px #777;
+      }
+
+      .hero-image {
+        background-image: url("https://cdn.pixabay.com/photo/2016/11/29/02/05/audience-1866738_960_720.jpg");
+        background-color: #cccccc;
+        height: 500px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .hero-image1 {
+        background-image: url("./images/PLayer\ Regsitration\ background.jpg");
+
+        height: 650px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .hero-text {
+        text-align: center;
+        /* background-color: rgb(0, 0, 0, 0.4); */
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register ~Team Key</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="RegisterPage.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./RegisterPage.html">Play India</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/RegisterPage.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
+                      <a class="nav-link" href="/Companies-dashboard.html">Dashboard</a>
+                  </li> -->
+            <!-- <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Topics
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Technology</a></li>
+                          <li><a class="dropdown-item" href="#">Web development</a></li>
+                          <li><a class="dropdown-item" href="#">Support</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Write for us</a></li>
+                      </ul>
+                  </li> -->
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-primary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+        <!-- <div class="mx-2">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Login
+          </button>
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            Sign up
+          </button>
+        </div> -->
+      </div>
+    </nav>
+
+    <!-- image  -->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px" id="Welcome">Welcome to TweakSports</h1>
+        <h5>Khelega India tabhi toh bhadega India</h5>
+        <!-- <button type="button" class="btn btn-success">Register</button> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="subheading">
+        This platform is to provide a solution that can further enhance the
+        grassroots parameters such as prevention of age fraud, enhancing player
+        performance, talent scouting for all sports nationally, etc. Grassroot
+        sports are extremely important to any developing sporting nation. It is
+        a foundation for sport for life and for high performance sport but, more
+        importantly, when delivered well it creates immense value and develops
+        more talents for the country in the years to come.
+      </div>
+      <img src="./images/new background.png" alt="#" id="heading-section" />
+    </div>
+    <div class="optionHeading">Choose among the following options</div>
+    <div class="cardsForm">
+      <div class="card" style="width: 18rem">
+        <a href="./signup.html">
+          <img src="/images/Athlete1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Sportperson Register</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <a href="http://localhost:3000/">
+          <img src="./images/sportclub.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Sport Club / Sport Fedration Register</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card" style="width: 18rem">
+        <a href="./Statistics.html">
+          <img src="./images/sponsor.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">Sponsor Login</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <img src="./images/organisation collage for sports.jpeg" alt="." />
+    <footer class="bg-dark text-light py-3">
+      <a href="https://twitter.com/?logout=1652864631323">
+        <i class="footer-fav-icon">
+          <img
+            class="footer-fav-icon"
+            src="./images/Twitter-fav-icon-bg-dark.jpg"
+            alt="#"
+          />
+        </i>
+      </a>
+      <p class="text-center">copyright &copy; Team Key</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

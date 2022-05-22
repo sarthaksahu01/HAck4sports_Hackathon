@@ -1,0 +1,21 @@
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.h2,
+h2 {
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.g-col-4 {
+  margin-left: 350px;
+}
+#piechart {
+  margin-top: 25px;
+  margin-left: 110px;
+}

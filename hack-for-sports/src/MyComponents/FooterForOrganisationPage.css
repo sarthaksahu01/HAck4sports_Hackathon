@@ -1,0 +1,14 @@
+.footer-fav-icon {
+  vertical-align: middle;
+  width: 24px;
+  justify-content: center;
+  /* margin-left: 354px; */
+  /* padding: 19px; */
+  margin: 26px 0px 29px 374px;
+}
+
+.bg-dark text-light py-3 {
+  position: "absolute";
+  width: 100%;
+  top: "4000px";
+}
